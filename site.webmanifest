@@ -1,0 +1,13 @@
+{
+  "name": "Varnan Kanjhinghat",
+  "short_name": "Varnan K",
+  "description": "Python/Django software developer and freelance web designer in Reading, UK.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#021a1c",
+  "theme_color": "#04292b",
+  "icons": [
+    { "src": "/assets/img/brand/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/img/brand/favicon.png", "sizes": "64x64", "type": "image/png" }
+  ]
+}

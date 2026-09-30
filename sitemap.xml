@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://varnanknair.me/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://varnanknair.me/assets/img/me/varnan-portrait.jpg</image:loc><image:title>Varnan Kanjhinghat, software developer and web designer, Reading UK</image:title></image:image>
+    <image:image><image:loc>https://varnanknair.me/assets/img/brand/og-image.jpg</image:loc><image:title>Varnan Kanjhinghat portfolio</image:title></image:image>
+    <image:image><image:loc>https://varnanknair.me/assets/img/work/z2biopharma.jpg</image:loc><image:title>Z2 Biopharma website by Varnan Kanjhinghat</image:title></image:image>
+    <image:image><image:loc>https://varnanknair.me/assets/img/work/marc.jpg</image:loc><image:title>MARC Reading community website by Varnan Kanjhinghat</image:title></image:image>
+    <image:image><image:loc>https://varnanknair.me/assets/img/work/aishwarya.jpg</image:loc><image:title>Aishwarya Homestay website by Varnan Kanjhinghat</image:title></image:image>
+  </url>
+</urlset>

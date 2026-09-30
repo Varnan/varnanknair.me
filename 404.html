@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Varnan Kanjhinghat</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#04292b">
+  <link rel="icon" type="image/png" href="/assets/img/brand/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@300;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink-0: #021a1c; --ink-1: #04292b; --copper: #d98b52; --copper-2: #eeb07a; --grad: linear-gradient(135deg, #f3c08e 0%, #d98b52 45%, #a9612f 100%); --text: #eef2f0; --muted: #a8bbb8; --dim: #6f8b88; --line: rgba(233, 165, 103, .16); }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; overflow-x: hidden; color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif;
+      background: radial-gradient(800px 600px at 20% 10%, rgba(24, 110, 115, .4), transparent 60%), var(--ink-1); }
+    body::before { content: ""; position: fixed; inset: 0; pointer-events: none;
+      background-image: linear-gradient(rgba(233, 165, 103, .06) 1px, transparent 1px), linear-gradient(90deg, rgba(233, 165, 103, .06) 1px, transparent 1px);
+      background-size: 72px 72px; -webkit-mask-image: radial-gradient(circle at center, #000 20%, transparent 70%); mask-image: radial-gradient(circle at center, #000 20%, transparent 70%); }
+    .orbit { position: fixed; width: 620px; height: 620px; border-radius: 50%; border: 1px solid rgba(217, 139, 82, .22); top: 50%; left: 50%; transform: translate(-50%, -50%); animation: spin 40s linear infinite; pointer-events: none; }
+    .orbit::after { content: ""; position: absolute; width: 14px; height: 14px; border-radius: 50%; background: var(--copper); box-shadow: 0 0 18px var(--copper); top: 60px; left: 100px; }
+    .orbit.two { width: 420px; height: 420px; border-style: dashed; opacity: .6; animation-duration: 60s; animation-direction: reverse; }
+    .orbit.two::after { width: 8px; height: 8px; top: auto; bottom: 40px; left: auto; right: 60px; }
+    @keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+    main { position: relative; text-align: center; max-width: 560px; }
+    .mark { width: 110px; margin: 0 auto 10px; display: block; filter: drop-shadow(0 12px 20px rgba(0, 0, 0, .6)); }
+    .code { font: 800 clamp(96px, 22vw, 168px)/1 Montserrat, sans-serif; letter-spacing: -.04em; margin: 0; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    h1 { font: 300 clamp(22px, 4vw, 30px) Montserrat, sans-serif; margin: 6px 0 0; }
+    h1 b { font-weight: 800; }
+    .path { display: inline-block; margin-top: 16px; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: rgba(2, 26, 28, .6); font: 13px 'JetBrains Mono', monospace; color: var(--muted); max-width: 100%; overflow-wrap: anywhere; }
+    .path span { color: var(--copper-2); }
+    p.msg { color: var(--muted); margin: 18px 0 0; }
+    .suggest { margin-top: 18px; font-size: 15px; color: var(--muted); }
+    .suggest[hidden] { display: none; }
+    .suggest a { color: var(--copper-2); font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; }
+    .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 10px; font: 600 15px Montserrat, sans-serif; text-decoration: none; transition: transform .2s; }
+    .btn:hover { transform: translateY(-2px); }
+    .primary { background: var(--grad); color: var(--ink-0); box-shadow: 0 10px 30px -10px rgba(217, 139, 82, .6); }
+    .ghost { border: 1px solid var(--line); color: var(--text); }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 18px; margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 14px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--copper-2); }
+    @media (prefers-reduced-motion: reduce) { .orbit { animation: none; } }
+  </style>
+</head>
+<body>
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="orbit two" aria-hidden="true"></div>
+  <main>
+    <img class="mark" src="/assets/img/brand/vk-mark.png" alt="VK" width="110" height="53">
+    <p class="code">404</p>
+    <h1>This page drifted <b>out of orbit.</b></h1>
+    <div class="path" id="path"><span>$</span> GET /</div>
+    <p class="msg">The address may be mistyped, or the page has moved.</p>
+    <p class="suggest" id="suggest" hidden>Did you mean <a id="suggest-link" href="/">/</a>?</p>
+    <div class="actions">
+      <a class="btn primary" href="/">Back to home</a>
+      <a class="btn ghost" href="/contact">Get in touch</a>
+    </div>
+    <nav aria-label="Sections">
+      <a href="/work">Work</a><a href="/services">Services</a><a href="/skills">Skills</a><a href="/ai">AI</a><a href="/experience">Experience</a><a href="/about">About</a><a href="/contact">Contact</a>
+    </nav>
+  </main>
+  <script>
+    (function () {
+      var path = decodeURIComponent(location.pathname);
+      document.getElementById('path').innerHTML = '<span>$</span> GET ' + path.replace(/[<>&]/g, '');
+      // Suggest the closest section for typos like /servicessasas or /contct
+      var sections = ['work', 'services', 'skills', 'ai', 'experience', 'about', 'contact'];
+      var word = path.replace(/^\/+|\/+$/g, '').split('/')[0].toLowerCase();
+      if (!word) return;
+      function dist(a, b) {
+        var d = [], i, j;
+        for (i = 0; i <= a.length; i++) { d[i] = [i]; }
+        for (j = 1; j <= b.length; j++) { d[0][j] = j; }
+        for (i = 1; i <= a.length; i++) for (j = 1; j <= b.length; j++)
+          d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        return d[a.length][b.length];
+      }
+      var best = null, bestScore = Infinity;
+      sections.forEach(function (s) {
+        var score = word.indexOf(s) === 0 || s.indexOf(word) === 0 ? 0 : dist(word, s);
+        if (score < bestScore) { bestScore = score; best = s; }
+      });
+      if (best && bestScore <= Math.max(2, Math.floor(best.length / 2))) {
+        var link = document.getElementById('suggest-link');
+        link.href = '/' + best; link.textContent = '/' + best;
+        document.getElementById('suggest').hidden = false;
+      }
+    })();
+  </script>
+</body>
+</html>
