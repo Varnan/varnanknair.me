@@ -189,7 +189,7 @@
   };
   // [symbol, name, category, level 0-100, note, core?]
   const SKILLS = [
-    ['Py', 'Python', 'backend', 96, 'My primary language since 2013. Used at Tesco Mobile (Offer Manager, OCS → CCS), Kuliza, Raybaby, Shadowfax, Cognalys and Inzane.', 1],
+    ['Py', 'Python', 'backend', 96, 'My primary language since 2013. Used at Tesco Mobile, Kuliza, Raybaby, Shadowfax, Cognalys and Inzane.', 1],
     ['Dj', 'Django', 'backend', 96, 'Production Django for 13+ years: telecom at Tesco Mobile, BFSI (UTI Mutual Fund, Bharti AXA Life), IoT and logistics.', 1],
     ['Rf', 'Django REST', 'backend', 92, 'API-first backends with Django REST Framework, serving mobile apps, devices and partner integrations.', 1],
     ['Ap', 'REST APIs', 'backend', 94, 'API design and architecture for high-traffic systems, including real-time reporting APIs at Cognalys.', 1],
@@ -197,8 +197,6 @@
     ['Rd', 'Redis', 'backend', 84, 'Caching, queues and pub/sub for IoT and logistics workloads.'],
     ['Rq', 'RabbitMQ', 'backend', 72, 'Message brokering for distributed task processing.'],
     ['Mq', 'MQTT', 'backend', 82, 'Configured and coded the MQTT server layer for Raybaby device connectivity.'],
-    ['Oc', 'OCS / CCS', 'backend', 85, 'Telecom online and converged charging systems. I lead the Tesco Mobile PAYG migration from OCS to CCS.', 1],
-    ['Om', 'Offer Manager', 'backend', 85, 'Building Tesco Mobile\'s Offer Manager software in Python/Django.'],
     ['Co', 'GitHub Copilot', 'ai', 90, 'In-editor AI pair programming for Python/Django, APIs and tests.', 1],
     ['Cc', 'Claude Code', 'ai', 88, 'Agentic AI coding: multi-file refactors, test generation and codebase exploration.', 1],
     ['Gp', 'ChatGPT / Codex', 'ai', 88, 'Debugging, code generation, documentation and design reviews.'],
@@ -240,7 +238,7 @@
     ['Ui', 'UI design', 'design', 80, 'Clean, conversion-focused web interfaces.'],
     ['Gt', 'Git', 'ways', 92, 'Daily. Branching strategies, reviews and release flows.'],
     ['Ag', 'Agile / Jira', 'ways', 88, 'Scrum and Kanban delivery with Jira and Trello.'],
-    ['Ld', 'Tech leadership', 'ways', 88, 'Leading the OCS → CCS PAYG migration at Tesco Mobile. Previously led the Raybaby backend team.', 1],
+    ['Ld', 'Tech leadership', 'ways', 88, 'Leading a large-scale platform migration at Tesco Mobile. Previously led the Raybaby backend team.', 1],
   ];
 
   const table = $('#periodic');
